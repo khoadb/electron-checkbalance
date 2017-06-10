@@ -1,0 +1,21 @@
+{
+  "name": "checkbalance-app",
+  "version": "1.0.0",
+  "description": "Electron powered checkbalance app with Angular and bower",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "checkbalance",
+    "electron",
+    "bower",
+    "angular"
+  ],
+  "author": "Khoa Do",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.1.0"
+  }
+}
