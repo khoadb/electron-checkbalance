@@ -1,0 +1,573 @@
+[
+    {
+        "_id": "5856d03f72d459ee39fe5e40",
+        "group_key": "5856d03f72d459ee39fe5e40",
+        "ref_no": "migration",
+        "template": "migration",
+        "description": "NKID FAMILY migration: Transfer point from kid.",
+        "value": 338,
+        "unit": "point",
+        "client": "547ec4478c30ea105b076622",
+        "__v": 0,
+        "migrate_2016": true,
+        "topup_type": "c",
+        "created_date": "2016-12-18T18:06:55.403Z",
+        "state": "done",
+        "type": "transfer",
+        "products": [],
+        "destination": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "after_value": 338,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "200000047652",
+            "customer": "53f0ea915f95996bc73da877",
+            "after_value": 0,
+            "customer_type": "KID",
+            "kids": [],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea759e2602321258d41bb3",
+        "group_key": "56ea759e2602321258d41bb3",
+        "unit": "vnd",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea2f100edbcc1858b2122c"
+        },
+        "cancelled_transaction": "56ea2f100edbcc1858b2122c",
+        "value": 500000,
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 0,
+        "migrate_2016": true,
+        "ref_no": "56ea759e2602321258d41bb3",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:15:10.821Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [],
+        "destination": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "after_value": 51000,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea75860edbcc1858b2127a",
+        "group_key": "56ea75860edbcc1858b21277",
+        "unit": "product",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea326c2602321258d419ed"
+        },
+        "cancelled_transaction": "56ea326c2602321258d419f2",
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 1,
+        "migrate_2016": true,
+        "ref_no": "56ea75860edbcc1858b2127a",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:14:46.088Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [
+            {
+                "expiry_date": "2016-03-18T10:29:08.880Z",
+                "name": "Vé vào cổng ngày thường trước 18:00",
+                "item_code": "220101001",
+                "_id": "56ea326c2602321258d419f0",
+                "created_date": "2016-03-17T04:28:28.944Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:29:08.883Z",
+                "name": "Vé vào cổng người lớn thu phí",
+                "item_code": "220102001",
+                "_id": "56ea326c2602321258d419f1",
+                "created_date": "2016-03-17T04:28:28.944Z"
+            }
+        ],
+        "destination": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea75860edbcc1858b21277",
+        "group_key": "56ea75860edbcc1858b21277",
+        "unit": "vnd",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea326c2602321258d419ed"
+        },
+        "cancelled_transaction": "56ea326c2602321258d419ed",
+        "value": 110000,
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 0,
+        "migrate_2016": true,
+        "ref_no": "56ea75860edbcc1858b21277",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:14:46.070Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [],
+        "destination": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "after_value": 551000,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        },
+        "source": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea74b8d0f7141a58f83fe9",
+        "group_key": "56ea74b8d0f7141a58f83fe6",
+        "unit": "product",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea33fb2602321258d41a03"
+        },
+        "cancelled_transaction": "56ea33fb2602321258d41a0b",
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 1,
+        "migrate_2016": true,
+        "ref_no": "56ea74b8d0f7141a58f83fe9",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:11:20.384Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [
+            {
+                "expiry_date": "2016-03-18T10:35:47.007Z",
+                "name": "Vé vào cổng ngày thường trước 18:00",
+                "item_code": "220101001",
+                "_id": "56ea33fb2602321258d41a06",
+                "created_date": "2016-03-17T04:35:07.144Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:35:47.010Z",
+                "name": "Vé vào cổng ngày thường trước 18:00",
+                "item_code": "220101001",
+                "_id": "56ea33fb2602321258d41a07",
+                "created_date": "2016-03-17T04:35:07.144Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:35:47.013Z",
+                "name": "Vé vào cổng người lớn thu phí",
+                "item_code": "220102001",
+                "_id": "56ea33fb2602321258d41a08",
+                "created_date": "2016-03-17T04:35:07.144Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:35:47.017Z",
+                "name": "Vé vào cổng người lớn thu phí",
+                "item_code": "220102001",
+                "_id": "56ea33fb2602321258d41a09",
+                "created_date": "2016-03-17T04:35:07.144Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:35:47.020Z",
+                "name": "Vé vào cổng người lớn thu phí",
+                "item_code": "220102001",
+                "_id": "56ea33fb2602321258d41a0a",
+                "created_date": "2016-03-17T04:35:07.144Z"
+            }
+        ],
+        "destination": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": [
+                {
+                    "created_date": "2016-03-17T04:28:28.944Z",
+                    "_id": "56ea326c2602321258d419f0",
+                    "expiry_date": "2016-03-18T10:29:08.880Z",
+                    "name": "Vé vào cổng ngày thường trước 18:00",
+                    "item_code": "220101001"
+                },
+                {
+                    "created_date": "2016-03-17T04:28:28.944Z",
+                    "_id": "56ea326c2602321258d419f1",
+                    "expiry_date": "2016-03-18T10:29:08.883Z",
+                    "name": "Vé vào cổng người lớn thu phí",
+                    "item_code": "220102001"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "56ea74b8d0f7141a58f83fe6",
+        "group_key": "56ea74b8d0f7141a58f83fe6",
+        "unit": "vnd",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea33fb2602321258d41a03"
+        },
+        "cancelled_transaction": "56ea33fb2602321258d41a03",
+        "value": 230000,
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 0,
+        "migrate_2016": true,
+        "ref_no": "56ea74b8d0f7141a58f83fe6",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:11:20.371Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [],
+        "destination": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "after_value": 441000,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        },
+        "source": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea748ed0f7141a58f83fe3",
+        "group_key": "56ea748ed0f7141a58f83fdf",
+        "unit": "timer_card",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea32532602321258d419e4"
+        },
+        "cancelled_transaction": "56ea32532602321258d419eb",
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 0,
+        "old_timer_card": {
+            "created_date": "2016-03-17T04:28:03.490Z",
+            "active_date": null,
+            "expiry_date": "2016-03-17T16:00:00.000Z",
+            "duration": 7200
+        },
+        "migrate_2016": true,
+        "ref_no": "56ea748ed0f7141a58f83fe3",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:10:38.414Z",
+        "state": "done",
+        "type": "reverse",
+        "timer_card": {
+            "expiry_date": "2016-03-17T16:00:00.000Z",
+            "duration": 7200
+        },
+        "products": [],
+        "destination": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea748ed0f7141a58f83fe2",
+        "group_key": "56ea748ed0f7141a58f83fdf",
+        "unit": "product",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea32532602321258d419e4"
+        },
+        "cancelled_transaction": "56ea32532602321258d419ea",
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 1,
+        "migrate_2016": true,
+        "ref_no": "56ea748ed0f7141a58f83fe2",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:10:38.401Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [
+            {
+                "expiry_date": "2016-03-18T10:28:43.293Z",
+                "name": "Bắp rang bơ",
+                "item_code": "050304001",
+                "_id": "56ea32532602321258d419e7",
+                "created_date": "2016-03-17T04:28:03.484Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:28:43.300Z",
+                "name": "Nước suối tiNi",
+                "item_code": "050404001",
+                "_id": "56ea32532602321258d419e8",
+                "created_date": "2016-03-17T04:28:03.484Z"
+            },
+            {
+                "expiry_date": "2016-03-18T10:28:43.303Z",
+                "name": "Vé vào cổng trẻ em dưới 90 cm",
+                "item_code": "220101003",
+                "_id": "56ea32532602321258d419e9",
+                "created_date": "2016-03-17T04:28:03.484Z"
+            }
+        ],
+        "destination": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": [
+                {
+                    "created_date": "2016-03-17T04:28:28.944Z",
+                    "_id": "56ea326c2602321258d419f0",
+                    "expiry_date": "2016-03-18T10:29:08.880Z",
+                    "name": "Vé vào cổng ngày thường trước 18:00",
+                    "item_code": "220101001"
+                },
+                {
+                    "created_date": "2016-03-17T04:28:28.944Z",
+                    "_id": "56ea326c2602321258d419f1",
+                    "expiry_date": "2016-03-18T10:29:08.883Z",
+                    "name": "Vé vào cổng người lớn thu phí",
+                    "item_code": "220102001"
+                },
+                {
+                    "created_date": "2016-03-17T04:35:07.144Z",
+                    "_id": "56ea33fb2602321258d41a06",
+                    "expiry_date": "2016-03-18T10:35:47.007Z",
+                    "name": "Vé vào cổng ngày thường trước 18:00",
+                    "item_code": "220101001"
+                },
+                {
+                    "created_date": "2016-03-17T04:35:07.144Z",
+                    "_id": "56ea33fb2602321258d41a07",
+                    "expiry_date": "2016-03-18T10:35:47.010Z",
+                    "name": "Vé vào cổng ngày thường trước 18:00",
+                    "item_code": "220101001"
+                },
+                {
+                    "created_date": "2016-03-17T04:35:07.144Z",
+                    "_id": "56ea33fb2602321258d41a08",
+                    "expiry_date": "2016-03-18T10:35:47.013Z",
+                    "name": "Vé vào cổng người lớn thu phí",
+                    "item_code": "220102001"
+                },
+                {
+                    "created_date": "2016-03-17T04:35:07.144Z",
+                    "_id": "56ea33fb2602321258d41a09",
+                    "expiry_date": "2016-03-18T10:35:47.017Z",
+                    "name": "Vé vào cổng người lớn thu phí",
+                    "item_code": "220102001"
+                },
+                {
+                    "created_date": "2016-03-17T04:35:07.144Z",
+                    "_id": "56ea33fb2602321258d41a0a",
+                    "expiry_date": "2016-03-18T10:35:47.020Z",
+                    "name": "Vé vào cổng người lớn thu phí",
+                    "item_code": "220102001"
+                }
+            ]
+        }
+    },
+    {
+        "_id": "56ea748ed0f7141a58f83fdf",
+        "group_key": "56ea748ed0f7141a58f83fdf",
+        "unit": "vnd",
+        "template": "refund.transaction",
+        "data": {
+            "template": "refund.transaction",
+            "client": "547ec4478c30ea105b076622",
+            "group_key": "56ea32532602321258d419e4"
+        },
+        "cancelled_transaction": "56ea32532602321258d419e4",
+        "value": 160000,
+        "client": "53bb5fd1088af3a415504afb",
+        "__v": 0,
+        "migrate_2016": true,
+        "ref_no": "56ea748ed0f7141a58f83fdf",
+        "topup_type": "c",
+        "created_date": "2016-03-17T09:10:38.315Z",
+        "state": "done",
+        "type": "reverse",
+        "products": [],
+        "destination": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "after_value": 211000,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        },
+        "source": {
+            "type": "client",
+            "ref_no": "53bb5fd1088af3a415504afb",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        }
+    },
+    {
+        "_id": "56ea40628ddaae16582f2ff8",
+        "group_key": "56ea40628ddaae16582f2ff8",
+        "unit": "vnd",
+        "value": 24000,
+        "description": "Sale From POS",
+        "data": {
+            "actualvalue": 0,
+            "bonusvalue": 0,
+            "transtype": "S",
+            "posdocnum": "10000000125136",
+            "template": "tiniworld.purchase",
+            "discount": 0,
+            "line_items": [
+                {
+                    "name": "Sting - dâu",
+                    "amount": 1,
+                    "unit_price": 14000
+                },
+                {
+                    "name": "Nước suối tiNi",
+                    "amount": 1,
+                    "unit_price": 10000
+                }
+            ],
+            "bill": {
+                "cashier_name": "tT Aeon Long Biên Cashier09",
+                "id": "10000000125136"
+            },
+            "tiniworld": {
+                "transactions_id": "10000000125136",
+                "location": "Tiniworld Aeon Long Biên 27 Cổ Linh, P.Long Biên, Q.Long Biên, TP.Hà Nội"
+            },
+            "userid": "00590",
+            "storecode": "tT003"
+        },
+        "client": "56420d60520536adb0192fa1",
+        "__v": 0,
+        "migrate_2016": true,
+        "template": "tiniworld.purchase",
+        "ref_no": "10000000125136",
+        "topup_type": "c",
+        "created_date": "2016-03-17T05:28:02.280Z",
+        "state": "done",
+        "type": "spend",
+        "products": [],
+        "destination": {
+            "type": "client",
+            "ref_no": "56420d60520536adb0192fa1",
+            "parents": [],
+            "kids": [],
+            "after_products": []
+        },
+        "source": {
+            "type": "card",
+            "ref_no": "300000030294",
+            "customer": "53f0ea915f95996bc73da878",
+            "parents": [],
+            "after_value": 51000,
+            "customer_type": "PARENT",
+            "kids": [
+                "53f0ea915f95996bc73da877"
+            ],
+            "after_products": []
+        }
+    }
+]

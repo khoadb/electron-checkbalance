@@ -1,0 +1,29 @@
+{
+    "_id": "1646667492",
+    "code": "1646667492",
+    "nfc_code": "1646667492",
+    "owner": {
+        "_id": "58870e04366aa9c95f79c59a",
+        "address": {
+            "district": "Quận 7",
+            "province": "Hồ Chí Minh"
+        },
+        "bonus_1": 0,
+        "bonus_2": 0,
+        "credit_plus": 0,
+        "email": "1646667492@taothenhanh.com",
+        "full_name": "Anh Khoa",
+        "gender": "M",
+        "kid_info": [],
+        "kids": [
+            "58870e04366aa9c95f79c59b"
+        ],
+        "personal_id": "271585406",
+        "phone": "01252416365",
+        "point": 2233,
+        "products": [],
+        "vnd": 43300
+    },
+    "status": "active",
+    "type": "VIP"
+}
