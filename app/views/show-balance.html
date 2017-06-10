@@ -1,0 +1,36 @@
+
+<div class="row">
+	Hello, its show-balance!
+</div>
+
+
+<div class="well" id="customer-info">
+	<h3> {{ customer_info.owner.full_name }} </h3>
+	<h4> {{ customer_info.owner.full_name | reverse }} </h4>
+	 <ul class="list-group">
+	 	<li class="list-group-item" id="cardid"> {{ customer_info.nfc_code }} </li>
+	 	<li class="list-group-item" id="tinidiem"> {{ customer_info.owner.point | currency_digits }} Tinidiem </li>
+	 	<li class="list-group-item" id="current_balance"> {{ customer_info.owner.vnd | currency_digits }} VND </li>
+	 	<li class="list-group-item" id="credit_plus"> {{ customer_info.owner.credit_plus }} </li>
+	 </ul>
+
+</div>
+
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="phone in customer_trans">
+
+    <div itemscope itemtype="http://data-vocabulary.org/Product" class="thumbnail" class="clearfix" style="height: 300px;">
+        <h3> {{ phone._id }} </h3> 
+    	<h4> <span> {{phone.description}} - {{phone.created_date}}  </span> </h4>
+      <img itemprop="image" ng-init="no-image.png" ng-src="{{phone.imgUrl}}" class="img-polaroid" style="width: 100px;"  alt="" />
+
+<!--       <div class="caption">        
+        <p> <span itemprop="description"> Release Date: {{phone.releaseDate}} </span> </p>
+      </div> -->
+
+    </div>
+  </div>
+</div>
+

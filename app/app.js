@@ -19,16 +19,16 @@ mainApp.config(['$routeProvider', function($routeProvider) {
    $routeProvider.
    
    when('/landingPage', {
-      templateUrl: 'tinizen/landing-screen.html', controller: 'LandingCtrl'
+      templateUrl: 'views/landing-screen.html', controller: 'LandingCtrl'
    }).
    
    when('/showBalance', {
-      templateUrl: 'tinizen/show-balance.html', 
+      templateUrl: 'views/show-balance.html', 
       controller: 'BalanceController'
    }).
 
    when('/showVideo', {
-      templateUrl: 'tinizen/landing-screen.html', controller: 'VideoController'
+      templateUrl: 'views/landing-screen.html', controller: 'VideoController'
    }).
    
    otherwise({
