@@ -7,8 +7,8 @@ const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 
-//khd
-const HID = require('node-hid')
+//khd, noted: not working under MacOS with node-hid.
+//const HID = require('node-hid')
 
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -17,12 +17,12 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 1200, height: 800})
 
   //khd
   //mainWindow.webContents.openDevTools();
   //set fullscreen, it will launch in fullscreen.
-  mainWindow.setFullScreen(true);
+  //mainWindow.setFullScreen(true);
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -32,7 +32,7 @@ function createWindow () {
   }))
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -66,13 +66,6 @@ app.on('activate', function () {
 
 
 })
-
-
-//khd
-function sendCardNo() {
-  mainWindow.webContents.send('card-number', '123445');
-  console.log('fake card number sending.');
-}
 
 
 // In this file you can include the rest of your app's specific main process

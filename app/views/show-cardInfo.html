@@ -1,0 +1,162 @@
+
+  <div id="container">
+    <!-- about -->
+    <section class="right_col" role="main" id="main">
+          <div class="row top_tiles col-lg-6 col-md-6 col-sm-6">
+
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon"><i class="glyphicon glyphicon-user"></i>
+                      </div>
+                      <div class="count"><span id="customer-name"> {{ customer_info.owner.full_name }}  </span></div>
+                      <h3>
+                          <span id="tinizen_card"></span>
+                          <small><span id="card_status"> {{ customer_info.status }} </span></small>
+                      </h3>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon"><i class="fa fa-money"></i>
+                      </div>
+                      <div class="count green"><span id="balance"> {{ customer_info.owner.vnd | currency_digits }} </span>đ</div>
+                      <h3>Số dư</h3>
+                      <p>Tài khoản chính.</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon"><i class="glyphicon glyphicon-gift"></i>
+                      </div>
+                      <div class="count pink"><span id="tiniDiem"> {{ customer_info.owner.point | currency_digits }}  </span></div>
+                      <h3>tiNiDiem</h3>
+                      <p>Điểm của bạn</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon"><i class="fa fa-gift"></i>
+                      </div>
+                      <div class="count"><span id="credit_plus"> {{ customer_info.owner.credit_plus }} </span>đ</div>
+                      <h3>Khuyến mại</h3>
+                      <p>Tài khoản khuyến mại (credit plus).</p>
+                  </div>
+              </div>
+
+<!-- 
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon"><i class="fa fa-clock-o"></i>
+                      </div>
+                      <div class="count"><span id="timer_card_remain"> {{ customer_info.owner.credit_plus }} </span></div>
+                      <h3>Thời gian chơi</h3>
+                      <p>Thời gian chơi game còn lại (timer card).</p>
+                  </div>
+              </div>
+               -->
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="tile-stats">
+                      <div class="icon green"><i class="fa fa-check"></i>
+                      </div>
+                      <div class="count"><span id="bonus_1"> {{ customer_info.owner.bonus_1 }} </span></div>
+                      <h3>Chơi game</h3>
+                      <p>Tài khoản Chơi game (Bonus 1).</p>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12" id="tickets_panel">
+                  <div class="x_panel">
+                      <div class="x_title">
+                          <h2><strong>Vé vào cổng</strong></h2>
+                          <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content">
+                          <div class="">
+                              <ul class="to_do list-group" id="tickets">
+                                  <li> {{ customer_info.owner.products }} </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+<!-- 
+              <div class="col-lg-6 col-md-16 col-sm-12" id="others_panel">
+                  <div class="x_panel">
+                      <div class="x_title">
+                          <h2><strong>Các sản phẩm khác</strong></h2>
+                          <div class="clearfix"></div>
+                      </div>
+                      <div class="x_content">
+                          <div class="">
+                              <ul class="to_do list-group" id="others">
+                                  <li></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+ -->
+
+          </div>
+          <!-- /top tiles -->
+
+
+
+         
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+
+
+          	                  <div class="tile-stats">
+                      <div class="icon"><i class="glyphicon glyphicon-user"></i>
+                      </div>
+                      <div class="count"><span id="customer-name"> Hoạt động gần đây
+  </span></div>
+                      <h3>
+                          <span id="tinizen_card"></span>
+                          <small><span id="card_status"> {{ customer_info.status }} </span></small>
+                      </h3>
+                  </div>
+
+
+              <div class="x_panel">
+                  <div class="x_title">
+                      <h2><strong>Hoạt động gần đây</strong></h2>
+                      <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      <div class="dashboard-widget-content" ng-repeat="trx in customer_trans">
+
+ <!--                          <ul class="list-unstyled timeline widget" id="recent-activities" ng-repeat="trx in customer_trans">
+                              <li>
+                               <p> {{trx.description}}  <span class="money"> {{trx.value | currency_digits }}  {{trx.unit}}   </p></span>
+                                <p class="time"> {{trx.created_date | ago_filter }} </p>
+                             </li>
+                          </ul>
+ -->
+ 						<div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="tile-stats">
+                              <div class="icon"><i class="fa fa-gift"></i>
+                             </div>
+                             <p><span id="credit_plus"> {{trx.description}} </span>đ</p>
+                             <span class="money"> {{trx.value | currency_digits }}  {{trx.unit}}   </p></span>
+                             <p class="time"> {{trx.created_date | ago_filter }} </p>
+                            </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- /top tiles -->
+
+
+
+    </section>
+  </div>
+  
+

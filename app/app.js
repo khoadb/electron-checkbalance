@@ -1,15 +1,7 @@
-// angular.module('Tinizen', [
-// 	'ngRoute',
-// 	'Tinizen.checkbalance'
-// ])
-
-// .config(['$routeProvider', function($routeProvider) {
-// 		$routeProvider
-// 		.otherwise({redirectTo: '/show-landing'})
-// }])
-
 var request = require('request');
 var util = require ('util');
+//humanize time
+var ago = require('s-ago');
 
 const path = require('path')
 
@@ -24,6 +16,11 @@ mainApp.config(['$routeProvider', function($routeProvider) {
    
    when('/showBalance', {
       templateUrl: 'views/show-balance.html', 
+      controller: 'BalanceController'
+   }).
+
+   when('/showCardInfo', {
+      templateUrl: 'views/show-CardInfo.html', 
       controller: 'BalanceController'
    }).
 
@@ -214,6 +211,32 @@ mainApp.filter('reverse', function() {
   };
 })
 
+//khd, some customer filter
+mainApp.filter('ago_filter', function() {
+  return function(input, uppercase) {
+    //console.log("input a: ", input, uppercase); 
+    input = input || '';
+    var out = '';
+
+    // for (var i = 0; i < input.length; i++) {
+    //   out = input.charAt(i) + out;
+    // }
+    var now = new Date(); //for test
+    var hoursAgo = new Date(now - (6 * 60 * 60 * 1000)); //for test
+    var trx_date = new Date(input); //for test
+    
+    var zeit = ago(trx_date); // 'just now' 
+
+    out = zeit;
+
+    // conditional based on optional argument
+    if (uppercase) {
+      out = out.toUpperCase();
+    }
+    return out;
+  };
+})
+
 //khd, add digits separator, i.e. 1000 -> 1,000
 mainApp.filter('currency_digits', function() {
   return function(input, uppercase) {
@@ -285,7 +308,7 @@ mainApp.service('testWCFService', function ($http) {
   	//test card '1646667492'
   	var cardID = card_id || '12345679';
 
-  	var limit = 10;
+  	var limit = 200;
   	//$httpProvider.defaults.headers.get = { 'My-Header' : 'value' };
   	var auth = { 'Authorization' : 'UI97pEi1rrcjr8lovGNWYC1k975PM9' };
   	var config = { 'headers' : auth };
@@ -354,7 +377,7 @@ Response:
 	- 200: get success
 	- others: get failed. Check body to details
 */
-function getCustomerTransactions(nfcCode, limit = 10) {
+function getCustomerTransactions(nfcCode, limit = 50) {
 	var url = util.format("/transactions/get_by_nfc/%s?limit=%d", nfcCode, limit);
 	console.log(url);
 	wcfRequest('get', url, callback);

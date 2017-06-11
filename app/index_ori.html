@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Checkbalance App</title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+        <style type="text/css">
+          
+          body {
+          text-align: center;
+          background-image: url("assets/bg2.jpg");
+          background-color: #cccccc;
+          -webkit-background-size: cover;
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 0;
+
+          }
+
+
+          .select {
+            box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
+            -moz-box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
+            -webkit-box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
+            
+          }
+
+          p.gruen::-moz-selection {background:#006619; color:#ffffff;}
+          p.gruen::selection {background:#006619; color:#ffffff;}
+
+        </style>
+
+
+  </head>
+  <body ng-app="mainApp">
+
+ <div class="">
+              <ul class="">
+                  
+                <li data-match-route="/what-is-nfc"><a href="#!/what-is-nfc"> start screen - default route</a> </li>
+                <li><a href="#!/showBalance?card_id=1646667492"> showBalance </a> </li>  
+               <!--  Hướng dẫn Sử dụng thẻ NFC  -->
+                <li data-match-route="/show-video"><a href="#!/showVideo"> show video   </a>  </li> 
+              
+                </li> 
+
+
+ 
+              </ul>
+            </div>
+
+
+    <div class="container-fluid"> 
+        <div class="" ng-view>
+           <!--   <h1> Checkbalance Desktop Application</h1>-->
+        </div>
+    </div>
+   
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+  
+
+
+  </body>
+
+
+  <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="./bower_components/ng-resource/dist/ng-resource.min.js"></script>
+
+
+  <!--  <script type="text/javascript" src="rfid.js"></script> -->
+  <script type="text/javascript" src="app.js"></script>
+
+</html>

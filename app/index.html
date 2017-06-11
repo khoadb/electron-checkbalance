@@ -1,90 +1,54 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Checkbalance App</title>
-    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+<!-- Basic Page Needs -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title>tiNiWorld Check-Balance (Kiểm tra tài khoản)</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css"  href="fonts/font-awesome-4.4.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
 
-        <style type="text/css">
-          
-          body {
-          text-align: center;
-          background-image: url("assets/bg2.jpg");
-          background-color: #cccccc;
-          -webkit-background-size: cover;
-          background-size: cover;
-          background-position: center;
-          margin-bottom: 0;
-
-          }
-
-
-          .select {
-            box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
-            -moz-box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
-            -webkit-box-shadow:0.5em 0 0 #000,-0.5em 0 0 #000;
-            
-          }
-
-          p.gruen::-moz-selection {background:#006619; color:#ffffff;}
-          p.gruen::selection {background:#006619; color:#ffffff;}
-
-        </style>
-
-
-  </head>
-  <body ng-app="mainApp">
+<body ng-app="mainApp">
 
  <div class="">
-              <ul class="">
-                  
+              <ul class="">                  
                 <li data-match-route="/what-is-nfc"><a href="#!/what-is-nfc"> start screen - default route</a> </li>
                 <li><a href="#!/showBalance?card_id=1646667492"> showBalance </a> </li>  
+                <li><a href="#!/showCardInfo?card_id=1646667492"> show Card Info </a> </li>  
+                
                <!--  Hướng dẫn Sử dụng thẻ NFC  -->
-                <li data-match-route="/show-video"><a href="#!/showVideo"> show video   </a>  </li> 
-              
-                </li> 
-
-
- 
+                <li data-match-route="/show-video"><a href="#!/showVideo"> show video   </a>  </li>
               </ul>
-            </div>
+</div>
 
 
     <div class="container-fluid"> 
         <div class="" ng-view>
-
-           <!--   <h1> Checkbalance Desktop Application</h1>
- -->
-
+           <!--   <h1> Checkbalance Desktop Application</h1>-->
         </div>
     </div>
-   
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-  
 
-<!--     <h2> Some test </h2>
 
-     <div class="container">
-         <h1>This page is using Bootstrap and jQuery!</h1>
-         <h3 id="click-counter"></h3>
-         <button class="btn btn-success" id="countbtn">Click here</button>
-         <script src="./view.js" ></script>
-      </div>
 
-     <h2> Scaning ...</h2>
-     <script src="./rfid.js" ></script>
-      <ul id="id-list">
-         <li> idd </li>
-      </ul>   -->
 
-  </body>
+</body>
+
 
 
   <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
   <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
-   <script type="text/javascript" src="./bower_components/ng-resource/dist/ng-resource.min.js"></script>
-
+  <script type="text/javascript" src="./bower_components/ng-resource/dist/ng-resource.min.js"></script>
 
   <!--  <script type="text/javascript" src="rfid.js"></script> -->
   <script type="text/javascript" src="app.js"></script>
