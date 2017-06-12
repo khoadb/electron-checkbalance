@@ -1,5 +1,5 @@
 {
-  "name": "Nkid Checkbalance",
+  "name": "nkid-checkbalance",
   "version": "0.0.1",
   "description": "Electron powered checkbalance Desktop app with Angular and bower",
   "main": "main.js",
