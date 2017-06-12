@@ -152,10 +152,10 @@ mainApp.controller('BalanceController', function($rootScope, $scope, $routeParam
 
 
     //test timer 
- //    $timeout(function(){ 
- //  		logged_in = true;
- //  		$location.path("/landingPage"); 
-	// },5000);
+    $timeout(function(){ 
+  		logged_in = true;
+  		$location.path("/landingPage"); 
+	  },15000);
 
 })
 

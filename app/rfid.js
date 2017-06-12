@@ -59,7 +59,8 @@ device.on('data', function(data) {
         //$cope.khd = "";
         var the_link = window.location.href; //works
         console.log("the link: ", the_link, buffer); 
-        location.href = "#!/showBalance?card_id=" + buffer; 
+        //location.href = "#!/showBalance?card_id=" + buffer; 
+        location.href = "#!/showCardInfo?card_id=" + buffer; 
         buffer = '';
     }
 
