@@ -20,7 +20,7 @@ mainApp.config(['$routeProvider', function($routeProvider) {
    }).
 
    when('/showCardInfo', {
-      templateUrl: 'views/show-CardInfo.html', 
+      templateUrl: 'views/show-cardInfo.html', 
       controller: 'BalanceController'
    }).
 
